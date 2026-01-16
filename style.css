@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    font-weight: 900;
+    padding: 0;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+.search-field {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding:  9px;
+    border-radius: 8px;
+    gap: 7px;
+}
+.search-field input {
+    border: none;
+    width: 100%;
+}
+
+.search-field input:focus {
+    outline: none;
+}
+
+.search button {
+    background-color: transparent;
+    padding: 9px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 900;
+    border: solid 2px #1b33ab;
+    font-size: .9rem;
+}
+
+/* Conteudo principal */
+
+.information {
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.information p {
+    max-width: 500px;
+    font-weight: 100;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.btn-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bl-button {
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    cursor: poiter;
+    border-radius: 8px;
+    background-color: #1b33ab;
+}
+
+.grey-button {
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    cursor: poiter;
+    border-radius: 8px;
+    background-color: rgb(60, 60, 60);
+}
+
+.bl-button:hover, .grey-button:hover {
+    transform: scale(1.05);
+    transition: .6s;
+}
+
+/* Seçao de projetos */
+
+.galeria-projetos {
+    background-color: rgb(173, 173, 173);
+    padding: 50px 0;
+}
+
+.cards-field {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.429);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    border-radius: 9px;
+}
+
+.cards img {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 10px 0;
+    gap: 10px;
+}
+
+footer ul li {
+    padding: 3px;
+}
+footer ul li:hover {
+    transform: scale(1.05);
+    transition: .6s;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    display: flex;
+    font-weight: 900;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Breakpoints */
+
+/* @media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+
+    header {
+        padding: 35px 0;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .hamburguer, .close {
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(-100%);
+        transition: .6s;
+        position: absolute;
+        z-index: 500;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        background-color: #000;
+    }
+    .menu-mobile li {
+        display: block;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+    }
+} */
+
+@media (max-width: 1220px) {
+    .menu-mobile {
+        display: none;
+    }
+}
